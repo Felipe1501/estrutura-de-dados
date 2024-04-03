@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "lista.h": "c",
+        "fila.h": "c",
+        "ctype.h": "c",
+        "buscabinaria.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
