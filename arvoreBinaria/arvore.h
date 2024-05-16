@@ -7,12 +7,12 @@ typedef struct {
     No *raiz;
 }ArvB;
 
-void InserirEsquerda(No *, int);
+// void InserirEsquerda(No *, int);
 
-void InserirDireita(No *, int);
+// void InserirDireita(No *, int);
 
-void Inserir(ArvB *, int);
+// void Inserir(ArvB *, int);
 
-No * InserirNovaVersao(No *, int);
+No * InserirArvore(No *, int);
 
 void Imprimir(No *);

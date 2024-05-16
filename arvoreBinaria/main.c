@@ -26,7 +26,7 @@ int main(){
         case 1:
             printf("digite um valor: ");
             scanf("%d", &valor);
-            raiz = InserirNovaVersao(raiz, valor);
+            raiz = InserirArvore(raiz, valor);
             //Inserir(&arv, valor);
             break;
         case 2:
