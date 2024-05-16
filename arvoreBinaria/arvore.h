@@ -5,6 +5,7 @@ typedef struct no{
 
 typedef struct {
     No *raiz;
+    int tamanho;
 }ArvB;
 
 // void InserirEsquerda(No *, int);
@@ -14,5 +15,7 @@ typedef struct {
 // void Inserir(ArvB *, int);
 
 No * InserirArvore(No *, int);
+
+int tamanho(No *);
 
 void Imprimir(No *);

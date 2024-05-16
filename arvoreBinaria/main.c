@@ -31,7 +31,11 @@ int main(){
             break;
         case 2:
             printf("impressao arvore binaria:\n");
+            printf("\n");
             Imprimir(raiz);
+            printf("\n");
+            printf("tamanho da arvore: %d\n", tamanho(raiz));
+            printf("\n");
             break;
         default:
             printf("\nOpcao invalida!.....");

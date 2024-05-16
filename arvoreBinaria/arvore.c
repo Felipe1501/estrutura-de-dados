@@ -63,6 +63,13 @@ No * InserirArvore(No *raiz, int valor){
     }
 }
 
+int tamanho(No *raiz){
+    if(raiz == NULL)
+        return 0;
+    else
+        return 1 + tamanho(raiz->esquerda) + tamanho(raiz->direita);
+}
+
 void Imprimir(No *raiz){
     if(raiz != NULL){
         Imprimir(raiz->esquerda);
