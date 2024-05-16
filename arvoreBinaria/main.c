@@ -10,6 +10,9 @@ int main(){
 
     int op, valor;
     ArvB arv;
+
+    No *raiz = NULL;
+
     arv.raiz = NULL;
     do{
         printf("\n\t0 - sair\n\t1 - inserir\n\t2 - imprimir\n");
@@ -23,11 +26,12 @@ int main(){
         case 1:
             printf("digite um valor: ");
             scanf("%d", &valor);
-            Inserir(&arv, valor);
+            raiz = InserirNovaVersao(raiz, valor);
+            //Inserir(&arv, valor);
             break;
         case 2:
             printf("impressao arvore binaria:\n");
-            Imprimir(arv.raiz);
+            Imprimir(raiz);
             break;
         default:
             printf("\nOpcao invalida!.....");

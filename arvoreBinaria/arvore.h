@@ -13,4 +13,6 @@ void InserirDireita(No *, int);
 
 void Inserir(ArvB *, int);
 
+No * InserirNovaVersao(No *, int);
+
 void Imprimir(No *);

@@ -47,6 +47,22 @@ void Inserir(ArvB *arv, int valor){
     }
 }
 
+No * InserirNovaVersao(No *raiz, int valor){
+    if(raiz == NULL){
+        No *novo = (No*)malloc(sizeof(No));
+        novo->conteudo = valor;
+        novo->esquerda = NULL;
+        novo->direita = NULL;
+        return novo;
+    }else{
+        if(valor < raiz->conteudo)
+             raiz->esquerda = InserirNovaVersao(raiz->esquerda, valor);
+        else
+             raiz->direita = InserirNovaVersao(raiz->direita, valor);
+        return raiz;
+    }
+}
+
 void Imprimir(No *raiz){
     if(raiz != NULL){
         Imprimir(raiz->esquerda);

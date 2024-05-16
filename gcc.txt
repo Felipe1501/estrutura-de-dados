@@ -1,1 +1,3 @@
 gcc -Wall -O2 -c <arquivo>.c -o <arquivo>.o
+
+gcc <arquivo>.c -o <arquivo>.exe <biblioteca>.o -s
