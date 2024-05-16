@@ -18,4 +18,6 @@ No * InserirArvore(No *, int);
 
 int tamanho(No *);
 
+int busca(No *, int);
+
 void Imprimir(No *);

@@ -15,7 +15,7 @@ int main(){
 
     arv.raiz = NULL;
     do{
-        printf("\n\t0 - sair\n\t1 - inserir\n\t2 - imprimir\n\t3 - tamanho da arvore\n");
+        printf("\n\t0 - sair\n\t1 - inserir\n\t2 - imprimir\n\t3 - tamanho da arvore\n\t4 - buscar\n");
         scanf("%d", &op);
     
         switch (op)
@@ -37,6 +37,11 @@ int main(){
             break;
         case 3:
             printf("tamanho da arvore: %d\n", tamanho(raiz));
+            break;
+        case 4:
+            printf("digite um valor para buscar: ");
+            scanf("%d", &valor);
+            busca(raiz, valor);
             break;
         default:
             printf("\nOpcao invalida!.....");

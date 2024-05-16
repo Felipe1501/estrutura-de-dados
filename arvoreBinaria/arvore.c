@@ -70,6 +70,18 @@ int tamanho(No *raiz){
         return 1 + tamanho(raiz->esquerda) + tamanho(raiz->direita);
 }
 
+int busca(No *raiz, int chave){
+    if(raiz == NULL)
+        return printf("valor fora do resultado de busca!");
+    else if(raiz->conteudo == chave)
+        return printf("valor encontrado na arvore! %d\n", raiz->conteudo);
+    else if(chave < raiz->conteudo)
+        return busca(raiz->esquerda, chave);
+    else
+        return busca(raiz->direita, chave);
+
+}
+
 void Imprimir(No *raiz){
     if(raiz != NULL){
         Imprimir(raiz->esquerda);
