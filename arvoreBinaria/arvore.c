@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "arvore.h"
 
-
-
 void InserirEsquerda(No *no, int valor){
     if(no->esquerda == NULL){
         No *novo = (No*)malloc(sizeof(No));
@@ -51,8 +49,8 @@ void Inserir(ArvB *arv, int valor){
 
 void Imprimir(No *raiz){
     if(raiz != NULL){
-        printf("%d ", raiz->conteudo);
         Imprimir(raiz->esquerda);
+        printf("%d ", raiz->conteudo);
         Imprimir(raiz->direita);
     }
 }

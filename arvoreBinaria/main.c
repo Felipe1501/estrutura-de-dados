@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "arvore.c"
+#include <locale.h>
+#include "arvore.h"
 
 int main(){
+
+    setlocale(LC_ALL, "Portuguese");
+
     int op, valor;
     ArvB arv;
     arv.raiz = NULL;
     do{
-        printf("\n0 - sair\n1 - inserir\n2 - imprimir\n");
+        printf("\n\t0 - sair\n\t1 - inserir\n\t2 - imprimir\n");
         scanf("%d", &op);
     
         switch (op)
@@ -29,4 +33,6 @@ int main(){
             printf("\nOpcao invalida!.....");
         }
     }while(op != 0);
+
+    return 0;
 }
