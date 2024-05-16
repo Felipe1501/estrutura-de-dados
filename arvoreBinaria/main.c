@@ -15,7 +15,7 @@ int main(){
 
     arv.raiz = NULL;
     do{
-        printf("\n\t0 - sair\n\t1 - inserir\n\t2 - imprimir\n");
+        printf("\n\t0 - sair\n\t1 - inserir\n\t2 - imprimir\n\t3 - tamanho da arvore\n");
         scanf("%d", &op);
     
         switch (op)
@@ -34,8 +34,9 @@ int main(){
             printf("\n");
             Imprimir(raiz);
             printf("\n");
+            break;
+        case 3:
             printf("tamanho da arvore: %d\n", tamanho(raiz));
-            printf("\n");
             break;
         default:
             printf("\nOpcao invalida!.....");
